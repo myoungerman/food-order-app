@@ -1,6 +1,7 @@
 import './App.css';
 import Onboarding from './components/Onboarding';
 import React from 'react';
+import Registration from './components/Registration';
 
 /*
 ONBOARDING
@@ -31,7 +32,7 @@ function App() {
     {
       image: "https://i.postimg.cc/cHCfxNK8/safe-food.png",
       header: "Good food at a cheap price",
-      body: "Eat at any restaurant, even expensive ones, at an affordable price."
+      body: "Eat at any restaurant at an affordable price."
     }
   ]
 
@@ -43,12 +44,14 @@ function App() {
 
   return (
     <div className="app">
-      <Onboarding
+{/*       <Onboarding
       pageValue={currPage}
       handlePageChange={handlePageChange}
       image={pageContent[currPage].image}
       header={pageContent[currPage].header}
-      body={pageContent[currPage].body}/>
+      body={pageContent[currPage].body}
+      /> */}
+      <Registration />
     </div>
   );
 }

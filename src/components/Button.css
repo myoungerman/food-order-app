@@ -18,3 +18,28 @@
     border: none;
     color: #4B5563;
 }
+
+.button--rounded {
+    width: 256px;
+    height: 49px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+.button--dark-green {
+    background: #32B768;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 17px;    
+}
+
+.button--light-green {
+    background: #D1FAE5;
+    color: #10B981;
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 17px;    
+}
