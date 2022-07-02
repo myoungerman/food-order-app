@@ -3,6 +3,9 @@ import './Onboarding.css';
 import OnboardingControls from './OnboardingControls';
 
 export default function Onboarding(props) {
+
+    // when buttons in onboardindg controls are clicked, update the page we're on
+
     return(
         <div class="onboarding--container">
             <img src="https://i.postimg.cc/v8nFMkrK/tracking-and-maps.png" class="onboarding--img"></img>

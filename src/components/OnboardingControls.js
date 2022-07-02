@@ -6,9 +6,9 @@ import './OnboardingControls.css'
 export default function OnboardingControls() {
     return (
         <div class="onboardingcontrols--container">
-            <p class="onboardingcontrols--skip">Skip</p>
+            <Button className="button--onboarding-text">Skip</Button>
             <PageIndicator />
-            <Button useClass="button--arrow-button"></Button>
+            <Button className="button--arrow-button"><img src="https://i.postimg.cc/fWpfC8kj/arrow.png" alt="Arrow button"></img></Button>
         </div>
     );
 }

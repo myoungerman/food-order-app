@@ -4,3 +4,17 @@
     width: 24px;
     height: 24px;
 }
+
+.button--onboarding-text {
+    width: 33px;
+    height: 19px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #4B5563;
+}
