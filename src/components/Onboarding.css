@@ -1,6 +1,7 @@
 .onboarding--img {
     padding: 0px 37.5px 0px 37.5px;
     width: 300px;
+    margin-top: 229px;
 }
 
 .onboarding--header {
@@ -10,6 +11,8 @@
     font-size: 1.5rem;
     line-height: 36px;
     color: #1F2937;
+    margin-bottom: 16px;
+    margin-top: 0px;
 }
 
 .onboarding--body {
@@ -20,11 +23,21 @@
     line-height: 15px;
     text-align: center;
     color: #4B5563;
+    margin-bottom: 104px;
+    width: 295px;
 }
 
 .onboarding--container {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 285px;
+    position: relative;
+}
+
+.onboarding--text-and-controls-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 543px;
 }

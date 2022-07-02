@@ -3,6 +3,6 @@ import './Button.css'
 
 export default function Button(props) {
     return (
-        <button class={props.className} type="button">{props.children}</button>
+        <button className={props.className} type="button" onClick={props.handleClick}>{props.children}</button>
     )
 }

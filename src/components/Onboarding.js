@@ -4,14 +4,14 @@ import OnboardingControls from './OnboardingControls';
 
 export default function Onboarding(props) {
 
-    // when buttons in onboardindg controls are clicked, update the page we're on
-
     return(
-        <div class="onboarding--container">
-            <img src="https://i.postimg.cc/v8nFMkrK/tracking-and-maps.png" class="onboarding--img"></img>
-            <p class="onboarding--header">Nearby restaurants</p>
-            <p class="onboarding--body">You don't have to go far to find a good restaurant. We have provided all the restaurants that are near you.</p>
-            <OnboardingControls />
+        <div className="onboarding--container">
+            <img src={props.image} className="onboarding--img"></img>
+            <div className="onboarding--text-and-controls-container">
+                <p className="onboarding--header">{props.header}</p>
+                <p className="onboarding--body">{props.body}</p>
+                <OnboardingControls handlePageChange={props.handlePageChange} pageValue={props.pageValue}/>
+            </div>
         </div>
     )
 }
