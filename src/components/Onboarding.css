@@ -1,0 +1,29 @@
+.onboarding--img {
+    padding: 0px 38px 0px 38px;
+    width: 100%;
+}
+
+.onboarding--header {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1F2937;
+}
+
+.onboarding--body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #4B5563;
+}
+
+.onboarding--container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
