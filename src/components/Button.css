@@ -43,3 +43,19 @@
     font-size: .875rem;
     line-height: 17px;    
 }
+
+.button--no-background {
+    background: #FFFFFF;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    color: #89909E;
+}
+
+.underlined {
+    color: #32B768;
+}

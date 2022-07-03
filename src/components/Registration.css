@@ -75,3 +75,34 @@ a {
     z-index: 1;
     top: 0px;
 }
+
+#registration--register-or-login-panel {
+    z-index: 2;
+    background-color: #FFFFFF;
+    border-radius: 36px 36px 0px 0px;
+    position: absolute;
+    width: 375px;
+    height: 576px;
+    left: 0px;
+    top: 236px;
+}
+
+#registration--swipe-icon {
+    position: absolute;
+    width: 48px;
+    height: 0px;
+    top: 24px;
+    left: 164px;
+    background-color: #D2D4D8;
+    border: 3px solid #D2D4D8;
+    border-radius: 8px;
+}
+
+#registration--create-account {
+    margin-right: 73px;
+}
+
+#registration--btns-on-top-of-panel-container {
+    margin-top: 64px;
+    margin-left: 36px;
+}

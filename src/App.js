@@ -17,6 +17,7 @@ when either button is clicked:
 function App() {
 
   const [currPage, setCurrPage] = React.useState(0);
+  const [clickedLoginOrRegister, setClickedLoginOrRegister] = React.useState(false);
 
   const pageContent = [
     {
@@ -51,7 +52,10 @@ function App() {
       header={pageContent[currPage].header}
       body={pageContent[currPage].body}
       /> */}
-      <Registration />
+      <Registration
+      setClickedLoginOrRegister={setClickedLoginOrRegister}
+      clickedLoginOrRegister={clickedLoginOrRegister}
+      />
     </div>
   );
 }

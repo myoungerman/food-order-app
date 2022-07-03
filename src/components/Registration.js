@@ -1,8 +1,9 @@
 import React from "react";
 import './Registration.css';
 import Button from "./Button";
+import CreateAccount from "./CreateAccount";
 
-export default function Registration() {
+export default function Registration(props) {
 
     /*
     The Create account button hides and disables the existing panel and opens the panel to create an account.
@@ -13,13 +14,12 @@ export default function Registration() {
     let userClickedBtn = false;
 
     function handleButtonClick(event) {
-        //disable registration panel
-
+        disableWelcomePanel();
         //determine what button was clicked
     }
 
-    function disableRegistrationPanel() {
-        //add a 
+    function disableWelcomePanel() {
+        props.setClickedLoginOrRegister(true);
     }
 
     return (
@@ -31,12 +31,30 @@ export default function Registration() {
                     <p className="registration--body">Before enjoying Foodmedia services, please register first.</p>
                 </div>
                 <div className="registration--buttons">
-                    <Button className="button--rounded button--dark-green" id="registration--create-account-btn">Create account</Button>
-                    <Button className="button--rounded button--light-green" id="registration--login-btn">Login</Button>
+                    <Button
+                    className="button--rounded button--dark-green"
+                    id="registration--create-account-btn"
+                    handleClick={handleButtonClick}
+                    >Create account
+                    </Button>
+                    <Button
+                    className="button--rounded button--light-green"
+                    id="registration--login-btn"
+                    handleClick={handleButtonClick}
+                    >Login
+                    </Button>
                 </div>
                 <footer>By logging in or registering, you have agreed to the <a>Terms and Conditions</a> and <a>Privacy Policy</a>.</footer>
             </section>
-            {userClickedBtn && <div className="registration--disable-welcome-panel"></div>}
+            {props.clickedLoginOrRegister && <div className="registration--disable-welcome-panel"></div>}
+            {props.clickedLoginOrRegister && <section id="registration--register-or-login-panel">
+            <span id="registration--swipe-icon"></span>
+            <div id="registration--btns-on-top-of-panel-container">
+                <Button id="registration--create-account" className="button--no-background underlined">Create Account</Button>
+                <Button id="registration--login" className="button--no-background">Login</Button>
+            </div>
+            <CreateAccount />
+            </section>}
         </div>
     )
 }
