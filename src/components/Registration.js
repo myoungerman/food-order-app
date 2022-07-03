@@ -6,7 +6,7 @@ import CreateAccount from "./CreateAccount";
 export default function Registration(props) {
 
     /*
-    The Create account button hides and disables the existing panel and opens the panel to create an account.
+    The Create account button hides and disables the existing panel and opens the CreateAccount panel.
 
     The login button hides and disables the existing panel and opens the panel to login.
     */
@@ -50,8 +50,14 @@ export default function Registration(props) {
             {props.clickedLoginOrRegister && <section id="registration--register-or-login-panel">
             <span id="registration--swipe-icon"></span>
             <div id="registration--btns-on-top-of-panel-container">
-                <Button id="registration--create-account" className="button--no-background underlined">Create Account</Button>
-                <Button id="registration--login" className="button--no-background">Login</Button>
+                <div>
+                    <Button className="button--no-background button--form-active">Create Account</Button>
+                    <hr className="green-line create-account-line"></hr>
+                </div>
+                <div>
+                    <Button className="button--no-background">Login</Button>
+                    <hr className="green-line login-line"></hr>
+                </div>
             </div>
             <CreateAccount />
             </section>}

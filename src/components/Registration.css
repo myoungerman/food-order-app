@@ -98,11 +98,41 @@ a {
     border-radius: 8px;
 }
 
-#registration--create-account {
-    margin-right: 73px;
-}
-
 #registration--btns-on-top-of-panel-container {
     margin-top: 64px;
     margin-left: 36px;
+    display: flex;
+    flex-direction: row;
+}
+
+#registration--btns-on-top-of-panel-container > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#registration--btns-on-top-of-panel-container > div > Button {
+    padding: 0px;
+}
+
+#registration--btns-on-top-of-panel-container > div:nth-child(1) {
+    width: 122px;
+    margin-right: 73px;
+}
+
+#registration--btns-on-top-of-panel-container > div:nth-child(2) {
+    width: 43px;
+}
+
+.green-line {
+    border: none;
+    background-color: #32B768;
+    height: 2px;
+}
+
+.green-line.create-account-line {
+    width: 77px;
+}
+
+.green-line.login-line {
+    width: 28px;
 }

@@ -11,9 +11,9 @@ export default function CreateAccount() {
             <input type="text" id="email" name="email" placeholder="Enter your email"></input>
             <label>Password</label>
             <input type="password" id="password" name="password" placeholder="**** **** ****"></input>
-            <Button className="button--rounded" />
+            <Button className="button--rounded disabled">Registration</Button>
             <hr className="line-between-buttons"></hr>
-            <Button className="button--rounded" />
+            <Button className="button--rounded" ><img src="https://i.postimg.cc/RZ3crqSf/icon-google.png"></img>Sign up with Google</Button>
         </form>
     )
 }

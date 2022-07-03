@@ -26,22 +26,19 @@
     border: none;
     font-family: 'Inter', sans-serif;
     font-style: normal;
+    font-weight: 700;
+    font-size: .875rem;
+    padding: 0px;
 }
 
 .button--dark-green {
     background: #32B768;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: .875rem;
-    line-height: 17px;    
+    color: #FFFFFF;   
 }
 
 .button--light-green {
     background: #D1FAE5;
     color: #10B981;
-    font-weight: 700;
-    font-size: .875rem;
-    line-height: 17px;    
 }
 
 .button--no-background {
@@ -56,6 +53,19 @@
     color: #89909E;
 }
 
-.underlined {
+.button--form-active {
     color: #32B768;
+}
+
+.disabled {
+    color: #9CA3AF;
+}
+
+button > img {
+    margin-right: 24px;
+    vertical-align: middle;
+}
+
+button {
+    vertical-align: middle;
 }
