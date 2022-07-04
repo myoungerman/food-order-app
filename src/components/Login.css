@@ -1,0 +1,66 @@
+#login--container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    width: 327px;
+    margin-left: 24px;
+}
+
+#login--container label {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: .875rem;
+    margin-left: 10px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+input:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+#login--container input {
+    width: 327px;
+    height: 48px;
+    border: 1px solid #BEC5D1;
+    border-radius: 12px;
+}
+
+#login--container Button {
+    margin-left: 30px;
+}
+
+#login--container Button:nth-child(9) {
+    margin-bottom: 32px;
+}
+
+::placeholder {
+    padding-left: 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 36px;
+    color: #9CA3AF;
+
+  }
+
+.line-between-buttons {
+    background: #D2D4D8;
+    width: 148px;
+    height: .5px;
+    border: none;
+}  
+
+.password-text {
+    color: #32B768;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: .875rem;
+    margin-top: 2px;
+    margin-bottom: 18px;
+    margin-left: 188px;
+    width: 122px;
+}

@@ -1,6 +1,71 @@
-.button--arrow-button {
+.btn--arrow-button {
     background-color: transparent;
     border: none;
     width: 24px;
     height: 24px;
+}
+
+.btn--onboarding-text {
+    width: 33px;
+    height: 19px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    color: #4B5563;
+}
+
+.btn--rounded {
+    width: 256px;
+    height: 49px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: .875rem;
+    padding: 0px;
+}
+
+.btn--dark-green {
+    background: #32B768;
+    color: #FFFFFF;   
+}
+
+.btn--light-green {
+    background: #D1FAE5;
+    color: #10B981;
+}
+
+.btn--no-bckgrd {
+    background: #FFFFFF;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    color: #89909E;
+}
+
+.btn--form-active {
+    color: #32B768;
+}
+
+.disabled {
+    color: #9CA3AF;
+}
+
+button > img {
+    margin-right: 24px;
+    vertical-align: middle;
+}
+
+button {
+    vertical-align: middle;
 }

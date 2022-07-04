@@ -1,29 +1,43 @@
 .onboarding--img {
-    padding: 0px 38px 0px 38px;
-    width: 100%;
+    padding: 0px 37.5px 0px 37.5px;
+    width: 300px;
+    margin-top: 229px;
 }
 
 .onboarding--header {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 36px;
     color: #1F2937;
+    margin-bottom: 16px;
+    margin-top: 0px;
 }
 
 .onboarding--body {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 15px;
     text-align: center;
     color: #4B5563;
+    margin-bottom: 104px;
+    width: 295px;
 }
 
 .onboarding--container {
     align-items: center;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.onboarding--text-and-controls-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 543px;
 }

@@ -1,0 +1,58 @@
+#createaccount--container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 36px;
+    width: 327px;
+   margin-left: 24px;
+}
+
+#createaccount--container label {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: .875rem;
+    margin-left: 10px;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+input:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+#create-acct--password {
+    margin-bottom: 34px;
+}
+
+#createaccount--container input {
+    width: 327px;
+    height: 48px;
+    border: 1px solid #BEC5D1;
+    border-radius: 12px;
+}
+
+#createaccount--container Button {
+    margin-left: 30px;
+}
+
+#createaccount--container Button:nth-child(9) {
+    margin-bottom: 32px;
+}
+
+::placeholder {
+    padding-left: 12px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .75rem;
+    line-height: 36px;
+    color: #9CA3AF;
+
+  }
+
+.line-between-buttons {
+    background: #D2D4D8;
+    width: 148px;
+    height: .5px;
+    border: none;
+}  

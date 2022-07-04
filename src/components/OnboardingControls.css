@@ -3,17 +3,5 @@
     align-items: center;
     width: 321px;
     justify-content: space-between;
-}
-
-.onboardingcontrols--skip {
-    width: 33px;
-    height: 19px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-
-    color: #4B5563;
+    margin-bottom: 44px;
 }
