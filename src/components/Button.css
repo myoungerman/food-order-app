@@ -1,11 +1,11 @@
-.button--arrow-button {
+.btn--arrow-button {
     background-color: transparent;
     border: none;
     width: 24px;
     height: 24px;
 }
 
-.button--onboarding-text {
+.btn--onboarding-text {
     width: 33px;
     height: 19px;
     font-family: 'Inter', sans-serif;
@@ -19,7 +19,7 @@
     color: #4B5563;
 }
 
-.button--rounded {
+.btn--rounded {
     width: 256px;
     height: 49px;
     border-radius: 12px;
@@ -31,17 +31,17 @@
     padding: 0px;
 }
 
-.button--dark-green {
+.btn--dark-green {
     background: #32B768;
     color: #FFFFFF;   
 }
 
-.button--light-green {
+.btn--light-green {
     background: #D1FAE5;
     color: #10B981;
 }
 
-.button--no-background {
+.btn--no-bckgrd {
     background: #FFFFFF;
     border: none;
     font-family: 'Inter', sans-serif;
@@ -53,7 +53,7 @@
     color: #89909E;
 }
 
-.button--form-active {
+.btn--form-active {
     color: #32B768;
 }
 

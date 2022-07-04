@@ -3,21 +3,15 @@ import Onboarding from './components/Onboarding';
 import React from 'react';
 import Registration from './components/Registration';
 
-/*
-ONBOARDING
-- When a page is the current page, its content should be passed as props.
-*/
-
-/*
-when either button is clicked:
--reassign the active class to the correct <span> dot. Compare the value of currPage to 
--load the new content for that page
-*/
-
 function App() {
 
   const [currPage, setCurrPage] = React.useState(0);
-  const [clickedLoginOrRegister, setClickedLoginOrRegister] = React.useState(false);
+  const [clickedLoginOrRegister, setClickedLoginOrRegister] = React.useState("");
+  const [accountInfo, setAccountInfo] = React.useState({
+    name: "",
+    email: "",
+    password: ""
+  });
 
   const pageContent = [
     {
@@ -55,6 +49,8 @@ function App() {
       <Registration
       setClickedLoginOrRegister={setClickedLoginOrRegister}
       clickedLoginOrRegister={clickedLoginOrRegister}
+      accountInfo={accountInfo}
+      setAccountInfo={setAccountInfo}
       />
     </div>
   );

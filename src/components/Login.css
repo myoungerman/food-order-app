@@ -1,12 +1,12 @@
-#createaccount--container {
+#login--container {
     display: flex;
     flex-direction: column;
     margin-top: 36px;
     width: 327px;
-   margin-left: 24px;
+    margin-left: 24px;
 }
 
-#createaccount--container label {
+#login--container label {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -20,22 +20,18 @@ input:not(:last-child) {
     margin-bottom: 8px;
 }
 
-#create-acct--password {
-    margin-bottom: 34px;
-}
-
-#createaccount--container input {
+#login--container input {
     width: 327px;
     height: 48px;
     border: 1px solid #BEC5D1;
     border-radius: 12px;
 }
 
-#createaccount--container Button {
+#login--container Button {
     margin-left: 30px;
 }
 
-#createaccount--container Button:nth-child(9) {
+#login--container Button:nth-child(9) {
     margin-bottom: 32px;
 }
 
@@ -56,3 +52,15 @@ input:not(:last-child) {
     height: .5px;
     border: none;
 }  
+
+.password-text {
+    color: #32B768;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: .875rem;
+    margin-top: 2px;
+    margin-bottom: 18px;
+    margin-left: 188px;
+    width: 122px;
+}

@@ -2,24 +2,12 @@ import React from "react";
 import './Registration.css';
 import Button from "./Button";
 import CreateAccount from "./CreateAccount";
+import Login from "./Login";
 
 export default function Registration(props) {
 
-    /*
-    The Create account button hides and disables the existing panel and opens the CreateAccount panel.
-
-    The login button hides and disables the existing panel and opens the panel to login.
-    */
-
-    let userClickedBtn = false;
-
     function handleButtonClick(event) {
-        disableWelcomePanel();
-        //determine what button was clicked
-    }
-
-    function disableWelcomePanel() {
-        props.setClickedLoginOrRegister(true);
+        props.setClickedLoginOrRegister(event.target.id);
     }
 
     return (
@@ -32,13 +20,13 @@ export default function Registration(props) {
                 </div>
                 <div className="registration--buttons">
                     <Button
-                    className="button--rounded button--dark-green"
+                    className="btn--rounded btn--dark-green"
                     id="registration--create-account-btn"
                     handleClick={handleButtonClick}
                     >Create account
                     </Button>
                     <Button
-                    className="button--rounded button--light-green"
+                    className="btn--rounded btn--light-green"
                     id="registration--login-btn"
                     handleClick={handleButtonClick}
                     >Login
@@ -51,15 +39,18 @@ export default function Registration(props) {
             <span id="registration--swipe-icon"></span>
             <div id="registration--btns-on-top-of-panel-container">
                 <div>
-                    <Button className="button--no-background button--form-active">Create Account</Button>
-                    <hr className="green-line create-account-line"></hr>
+                    <Button
+                    className={props.clickedLoginOrRegister === "registration--create-account-btn" ? "btn--no-bckgrd btn--form-active" : "btn--no-bckgrd"}
+                    >Create Account</Button>
+                    {props.clickedLoginOrRegister === "registration--create-account-btn" && <hr className="green-line create-account-line"></hr>}
                 </div>
                 <div>
-                    <Button className="button--no-background">Login</Button>
-                    <hr className="green-line login-line"></hr>
+                    <Button className={props.clickedLoginOrRegister === "registration--login-btn" ? "btn--no-bckgrd btn--form-active" : "btn--no-bckgrd"}>Login</Button>
+                    {props.clickedLoginOrRegister === "registration--login-btn" && <hr className="green-line login-line"></hr>}
                 </div>
             </div>
-            <CreateAccount />
+            {props.clickedLoginOrRegister === "registration--create-account-btn" && <CreateAccount accountInfo={props.accountInfo} setAccountInfo={props.setAccountInfo} />}
+            {props.clickedLoginOrRegister === "registration--login-btn" && <Login />}            
             </section>}
         </div>
     )

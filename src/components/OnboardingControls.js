@@ -18,9 +18,9 @@ export default function OnboardingControls(props) {
 
     return (
         <div className="onboardingcontrols--container">
-            <Button className="button--onboarding-text" handleClick={goToNextPage}>Skip</Button>
+            <Button className="btn--onboarding-text" handleClick={goToNextPage}>Skip</Button>
             <PageIndicator pageValue={props.pageValue} />
-            <Button className="button--arrow-button" handleClick={goToNextPage}><img src="https://i.postimg.cc/fWpfC8kj/arrow.png" alt="Arrow button"></img></Button>
+            <Button className="btn--arrow-button" handleClick={goToNextPage}><img src="https://i.postimg.cc/fWpfC8kj/arrow.png" alt="Arrow button"></img></Button>
         </div>
     );
 }
