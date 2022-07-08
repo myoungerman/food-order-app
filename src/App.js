@@ -7,6 +7,7 @@ function App() {
 
   // Tracks the 3 introductory pages.
   const [currPage, setCurrPage] = React.useState(0);
+  const [areCredentialsValid, setAreCredentialsValid] = React.useState(false);
 
   const pageContent = [
     {
@@ -41,7 +42,7 @@ function App() {
       header={pageContent[currPage].header}
       body={pageContent[currPage].body}
       /> */}
-      <Registration />
+      {!areCredentialsValid && <Registration setAreCredentialsValid={setAreCredentialsValid} />}
     </div>
   );
 }

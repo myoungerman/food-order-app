@@ -10,29 +10,13 @@ export default function Registration(props) {
       email: "",
       password: ""
     });
-    const [wasAccountCreated, setWasAccountCreated] = React.useState(false);
-    const [accountInfo, setAccountInfo] = React.useState({
-        name: "",
-        email: "",
-        password: ""
-      });    
-
+    const [wasAccountCreated, setWasAccountCreated] = React.useState(false);   
     const [clickedLoginOrRegister, setClickedLoginOrRegister] = React.useState("");
+   // const [areCredentialsValid, setAreCredentialsValid] = React.useState(false);
 
     function handleButtonClick(event) {
         setClickedLoginOrRegister(event.target.id);
     };
-
-    function validateInputs(accountInfo) {
-        console.log(accountInfo.email);
-        if (accountInfo.email.includes("@")) {
-            console.log('has @');
-            return true;
-        } else {
-            console.log('returning');
-            return false;
-        }
-    }
 
     return (
         <div style={{position: "relative"}}>
@@ -73,8 +57,8 @@ export default function Registration(props) {
                     {(clickedLoginOrRegister === "registration--login-btn" || wasAccountCreated) && <hr className="green-line login-line"></hr>}
                 </div>
             </div>
-            {(!wasAccountCreated && clickedLoginOrRegister === "registration--create-account-btn") && <CreateAccount accountInfo={accountInfo} setAccountInfo={setAccountInfo} setWasAccountCreated={setWasAccountCreated} validateInputs={validateInputs} />}
-            {(wasAccountCreated || clickedLoginOrRegister === "registration--login-btn") && <Login loginInfo={loginInfo} setLoginInfo={setLoginInfo} />}            
+            {(!wasAccountCreated && clickedLoginOrRegister === "registration--create-account-btn") && <CreateAccount setWasAccountCreated={setWasAccountCreated} />}
+            {(wasAccountCreated || clickedLoginOrRegister === "registration--login-btn") && <Login loginInfo={loginInfo} setLoginInfo={setLoginInfo} setAreCredentialsValid={props.setAreCredentialsValid} />}            
             </section>}
         </div>
     )
