@@ -9,6 +9,8 @@ export default function Login(props) {
         password: ""
     });
 
+    let inputsAreFilled = loginInfo.email && loginInfo.password;
+
     function handleInputChange(event) {
         const {name, value} = event.target;
 
@@ -36,7 +38,7 @@ export default function Login(props) {
         <label>Password</label>
         <input type="password" id="login--password" name="password" placeholder="**** **** ****" defaultValue={loginInfo.password} onChange={handleInputChange}></input>
         <p className="password-text">Forget password?</p>
-        <Button className="btn--rounded disabled" type="submit">Login</Button>
+        <Button className={`btn--rounded ${inputsAreFilled ? "btn--dark-green" : "disabled"}`} type="submit">Login</Button>
         <hr className="line-between-buttons"></hr>
         <Button className="btn--rounded" ><img src="https://i.postimg.cc/RZ3crqSf/icon-google.png"></img>Login with Google</Button>
     </form>

@@ -2,6 +2,7 @@ import './App.css';
 import Onboarding from './components/Onboarding';
 import React from 'react';
 import Registration from './components/Registration';
+import Password from './components/Password';
 
 function App() {
 
@@ -42,7 +43,8 @@ function App() {
       header={pageContent[currPage].header}
       body={pageContent[currPage].body}
       /> */}
-      {!areCredentialsValid && <Registration setAreCredentialsValid={setAreCredentialsValid} />}
+      {/* {!areCredentialsValid && <Registration setAreCredentialsValid={setAreCredentialsValid} />} */}
+      <Password />
     </div>
   );
 }

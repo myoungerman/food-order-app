@@ -3,3 +3,10 @@
     justify-content: center;
     display: flex;
   }
+
+  input {
+    width: 327px;
+    height: 48px;
+    border: 1px solid #BEC5D1;
+    border-radius: 12px;
+}
