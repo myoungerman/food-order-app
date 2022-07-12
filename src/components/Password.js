@@ -12,7 +12,9 @@ export default function Password() {
     };
 
     function submitEmail() {
+        if (!email) { return; }
 
+        
     }
 
     return (
