@@ -16,15 +16,8 @@
     vertical-align: middle;
 }
 
-input:not(:last-child) {
+#login--container input:not(:last-child) {
     margin-bottom: 8px;
-}
-
-#login--container input {
-    width: 327px;
-    height: 48px;
-    border: 1px solid #BEC5D1;
-    border-radius: 12px;
 }
 
 #login--container Button {
@@ -43,7 +36,6 @@ input:not(:last-child) {
     font-size: .75rem;
     line-height: 36px;
     color: #9CA3AF;
-
   }
 
 .line-between-buttons {

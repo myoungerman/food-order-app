@@ -2,22 +2,19 @@ import './App.css';
 import Onboarding from './components/Onboarding';
 import React from 'react';
 import Registration from './components/Registration';
+import Password from './components/Password';
 
 function App() {
 
+  // Tracks the 3 introductory pages.
   const [currPage, setCurrPage] = React.useState(0);
-  const [clickedLoginOrRegister, setClickedLoginOrRegister] = React.useState("");
-  const [accountInfo, setAccountInfo] = React.useState({
-    name: "",
-    email: "",
-    password: ""
-  });
+  const [areCredentialsValid, setAreCredentialsValid] = React.useState(false);
 
   const pageContent = [
     {
       image: "https://i.postimg.cc/v8nFMkrK/tracking-and-maps.png",
       header: "Nearby restaurants",
-      body: "You don't have to go far to find a good restaurant. We have provided all the restaurants that are near you."
+      body: "You don't have to go far to find a good restaurant. We list all the restaurants that are near you."
     },
     {
       image: "https://i.postimg.cc/rpQS2ppk/order-illustration.png",
@@ -46,12 +43,8 @@ function App() {
       header={pageContent[currPage].header}
       body={pageContent[currPage].body}
       /> */}
-      <Registration
-      setClickedLoginOrRegister={setClickedLoginOrRegister}
-      clickedLoginOrRegister={clickedLoginOrRegister}
-      accountInfo={accountInfo}
-      setAccountInfo={setAccountInfo}
-      />
+      {/* {!areCredentialsValid && <Registration setAreCredentialsValid={setAreCredentialsValid} />} */}
+      <Password />
     </div>
   );
 }
