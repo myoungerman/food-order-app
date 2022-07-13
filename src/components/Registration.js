@@ -58,7 +58,7 @@ export default function Registration(props) {
                 </div>
             </div>
             {(!wasAccountCreated && clickedLoginOrRegister === "registration--create-account-btn") && <CreateAccount setWasAccountCreated={setWasAccountCreated} />}
-            {(wasAccountCreated || clickedLoginOrRegister === "registration--login-btn") && <Login loginInfo={loginInfo} setLoginInfo={setLoginInfo} setAreCredentialsValid={props.setAreCredentialsValid} />}            
+            {(wasAccountCreated || clickedLoginOrRegister === "registration--login-btn") && <Login loginInfo={loginInfo} setLoginInfo={setLoginInfo} setAreCredentialsValid={props.setAreCredentialsValid} setForgotPassword={props.setForgotPassword} />}            
             </section>}
         </div>
     )
