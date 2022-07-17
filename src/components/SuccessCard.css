@@ -1,0 +1,46 @@
+.c-success-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-success-card__icon {
+    margin-top: 265px;
+    margin-bottom: 29px;
+}
+
+.c-success-card__header {
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.c-success-card__paragraph {
+    width: 283px;
+    margin-bottom: 28px;
+}
+
+.c-success-card__button {
+    margin-top: 137px;
+    margin-bottom: 70px;
+}
+
+.paragraph--bold {
+    font-weight: bold;
+}
+
+.paragraph--dark-grey {
+    color: #6B7280;
+}
+
+.success-icon {
+    width: 120px;
+}
+
+.header--24px {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 36px;
+    color: #1F2937;
+}

@@ -1,6 +1,7 @@
 .app {
     width: 375px;
     display: flex;
+    justify-content: center;
   }
 
 body {
@@ -35,4 +36,8 @@ input {
     height: 48px;
     border: 1px solid #BEC5D1;
     border-radius: 12px;
+}
+
+.text--centered {
+  text-align: center;
 }
