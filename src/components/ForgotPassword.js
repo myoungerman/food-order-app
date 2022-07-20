@@ -18,8 +18,8 @@ export default function ForgotPassword(props) {
 
     return (
         <div className="c-forgot-pwd">
-            <h1 className="c-forgot-pwd__title c-forgot-pwd__page-header">Forgot Password</h1>
-            <p className="c-forgot-pwd__text">Enter your registered email below.</p>
+            <h1 className="pwd__title c-pwd__page-header">Forgot Password</h1>
+            <p className="pwd__text">Enter your registered email below.</p>
             <div className="l-forgot-pwd__container">
                 <label>Email address</label>
                 <input type="text" name="email" placeholder="Enter your email" defaultValue={email} onChange={handleInputChange}></input>

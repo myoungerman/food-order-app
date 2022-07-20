@@ -2,6 +2,7 @@ import React from "react";
 import './Password.css'
 import SuccessCard from "./SuccessCard";
 import ForgotPassword from "./ForgotPassword";
+import ChangePassword from "./ChangePassword.js";
 
 export default function Password() {
 
@@ -9,8 +10,9 @@ export default function Password() {
 
     return (
         <React.Fragment>
-            {!wasEmailSubmitted && <ForgotPassword setWasEmailSubmitted={setWasEmailSubmitted} />}
-            {wasEmailSubmitted && <SuccessCard />}
+{/*             {!wasEmailSubmitted && <ForgotPassword setWasEmailSubmitted={setWasEmailSubmitted} />}
+            {wasEmailSubmitted && <SuccessCard />} */}
+            <ChangePassword></ChangePassword>
         </React.Fragment>
     )
 }
