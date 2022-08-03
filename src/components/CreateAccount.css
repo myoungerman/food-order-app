@@ -56,13 +56,3 @@ input:not(:last-child) {
     height: .5px;
     border: none;
 }
-
-#createaccount--container input[type=text] {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: .875rem;
-}

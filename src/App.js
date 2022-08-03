@@ -1,8 +1,9 @@
+import React from 'react';
 import './App.css';
 import Onboarding from './components/Onboarding';
-import React from 'react';
 import Registration from './components/Registration';
 import Password from './components/Password';
+import MainAppOptions from './components/MainAppOptions';
 
 function App() {
 
@@ -37,15 +38,16 @@ function App() {
 
   return (
     <div className="app">
-{/*       <Onboarding
+{/* {       <Onboarding
       pageValue={currPage}
       handlePageChange={handlePageChange}
       image={pageContent[currPage].image}
       header={pageContent[currPage].header}
       body={pageContent[currPage].body}
-      /> */}
+      /> 
       {(!areCredentialsValid && !forgotPassword) && <Registration setAreCredentialsValid={setAreCredentialsValid} setForgotPassword={setForgotPassword} />}
-      {forgotPassword && <Password />}
+      {forgotPassword && <Password />} */}
+      <MainAppOptions />
     </div>
   );
 }
