@@ -6,6 +6,14 @@
     align-items: center;
 }
 
+.c-find-food__Search {
+    margin-top: 16px;
+}
+
+.c-find-food__Promos {
+    margin-top: 28px;
+}
+
 .hamburger {
     width: 16px;
     height: 16px;
@@ -14,4 +22,6 @@
 .headshot {
     width: 32px;
     height: 32px;
+    border-radius: 50%;
 }
+

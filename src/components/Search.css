@@ -1,0 +1,14 @@
+.magnifying-glass {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+}
+
+.c-search__img {
+    margin-left: 27px;
+    margin-top: 10px;
+}
+
+.input--search::placeholder {
+    padding-left: 0px;
+}

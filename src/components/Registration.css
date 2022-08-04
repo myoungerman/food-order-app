@@ -62,10 +62,6 @@ footer {
     color: #242323;
 }
 
-a {
-    color: #32B768;
-}
-
 .registration--disable-welcome-panel {
     background-color: #000000;
     opacity: 48%;

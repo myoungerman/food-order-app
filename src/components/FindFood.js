@@ -9,11 +9,11 @@ import './FindFood.css'
 
 export default function FindFood() {
     return (
-        <div className='c-find-food'>
-            <FindFoodHeader className='c-find-food__FindFoodHeader' />
-{/*             <Search />
-            <Promos />
-            <NewDishes />
+        <div className="c-find-food">
+            <FindFoodHeader className="c-find-food__FindFoodHeader" />
+            <Search className="c-find-food__Search" />
+            <Promos className="c-find-food__Promos" />
+            {/*<NewDishes />
             <NearbyRestaurants />
             <Footer /> */}
         </div>

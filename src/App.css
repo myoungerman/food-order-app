@@ -2,7 +2,19 @@
     width: 375px;
     display: flex;
     justify-content: center;
+    color: #FFFFFF;
   }
+
+a {
+  color: #32B768;
+}
+
+.a--secondary {
+  width: 36px;
+  color: #FFFFFF;
+  font-size: .5rem;
+  font-weight: 700;
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -49,6 +61,45 @@ input {
     padding-bottom: 2px;
 }
 
+.input--search {
+  width: 239px;
+  border-radius: 11px;
+  height: 36px;
+  background-color: #E6E7E9;
+  color: #9CA3AF;
+  padding: 0px 0px 0px 49px;
+  border: none;
+}
+
 .text--centered {
   text-align: center;
+}
+
+.chevron::before {
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
+}
+
+.chevron--right:before {
+	left: 0;
+	transform: rotate(45deg);
+}
+
+.chevron--bottom:before {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+.chevron--left:before {
+	left: 0.25em;
+	transform: rotate(-135deg);
 }
