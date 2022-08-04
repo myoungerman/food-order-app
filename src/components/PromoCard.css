@@ -7,14 +7,14 @@
 }
 
 .c-promo-card__h3 {
-    margin-top: 12px;
+    margin-top: 51px;
     margin-bottom: 3px;
 }
 
 /* Not sure if I've written these 2 in correct BEM format, but will revisit later.  */
 .c-promo-card__img--icon {
-    margin-top: 13px;
-    margin-left: 10px;
+    position: absolute;
+    top: 5%;
 }
 
 .c-promo-card__img--background {
@@ -41,8 +41,7 @@
 }
 
 .promo-company-icon {
-    width: 44px;
-    height: 26px;
+    max-width: 50px;
 }
 
 .header--promo {
