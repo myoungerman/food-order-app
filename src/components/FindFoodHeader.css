@@ -1,4 +1,17 @@
 .c-find-food-header {
     display: flex;
     flex-direction: row;
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+    width: 16px;
+    height: 16px;
+}
+
+.headshot {
+    width: 32px;
+    height: 32px;
 }

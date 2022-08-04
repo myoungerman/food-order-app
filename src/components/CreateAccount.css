@@ -39,17 +39,6 @@ input:not(:last-child) {
     margin-bottom: 32px;
 }
 
-::placeholder {
-    padding-left: 12px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: .75rem;
-    line-height: 36px;
-    color: #9CA3AF;
-
-  }
-
 .line-between-buttons {
     background: #D2D4D8;
     width: 148px;

@@ -6,10 +6,10 @@ import SettingsPanel from './SettingsPanel';
  */
 export default function MainAppOptions() {
     return (
-        <React.Fragment>
+        <div className="c-main-app-options">
             <FindFood />
 {/*             <BookingHistory />
             <SettingsPanel /> */}
-        </React.Fragment>
+        </div>
     )
 }

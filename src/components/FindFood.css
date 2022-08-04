@@ -1,0 +1,10 @@
+.c-find-food {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-find-food__FindFoodHeader {
+    margin-top: 32px;
+}

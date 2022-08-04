@@ -9,13 +9,13 @@ import './FindFood.css'
 
 export default function FindFood() {
     return (
-        <div>
-            <FindFoodHeader />
-            <Search />
+        <div className='c-find-food'>
+            <FindFoodHeader className='c-find-food__FindFoodHeader' />
+{/*             <Search />
             <Promos />
             <NewDishes />
             <NearbyRestaurants />
-            <Footer />
+            <Footer /> */}
         </div>
     )
 }

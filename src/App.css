@@ -31,6 +31,14 @@ label {
   color: #9CA3AF;
 }
 
+.text--secondary {
+    font-weight: 600;
+    font-size: .75rem;
+    line-height: 15px;
+    text-align: center;
+    color: #4B5563;
+}
+
 input {
     width: 327px;
     height: 48px;

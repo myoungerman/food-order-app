@@ -1,0 +1,12 @@
+.c-location {
+    display: flex;
+    width: 166px;
+}
+
+.c-location__img {
+    margin-right: 4px;
+}
+
+.c-location__text {
+    width: 146px;
+}
