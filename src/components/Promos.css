@@ -1,0 +1,7 @@
+.background--orange {
+    background: linear-gradient(to right, #FF9F06 10%, #FFFFFF);
+}
+
+.background--green {
+    background: linear-gradient(to right, #00D756 10%, #018AC5);
+}

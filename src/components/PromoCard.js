@@ -3,7 +3,7 @@ import './PromoCard.css'
 
 export default function PromoCard(props) {
     return (
-        <div className={`c-promo-card ${props.className}`}>
+        <div className={`c-promo-card ${props.className ? props.className : ''}`}>
             <img src={props.companyIcon} className="promo-company-icon c-promo-card__img--icon"></img>
             <div className="l-promo-card__text-container">
                 <h3 className="header--promo c-promo-card__h3">{props.title}</h3>
