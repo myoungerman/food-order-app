@@ -1,0 +1,37 @@
+.c-nearby-restaurants {
+    width: inherit;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-nearby-restaurants__link {
+    display: flex;
+    margin-left: 73px;
+}
+
+.c-nearby-restaurants__header {
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.l-nearby-restaurants__intro-content-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.c-nearby-restaurants__chevron {
+    margin-left: 6px;
+    margin-top: 1px;
+}
+
+.l-nearby-restaurants__card--container {
+    align-self: flex-start;
+    margin-left: 18px;
+    display: flex;
+}
+
+.c-nearby-restaurants__DishCard {
+    margin-right: 12px;
+}
