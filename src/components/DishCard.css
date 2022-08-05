@@ -1,0 +1,27 @@
+.l-dish-card__details-container {
+    display: flex;
+}
+
+.c-dish-card {
+    width: 148px;
+}
+
+.c-dish-card__img {
+    width: 128px;
+    height: 103px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.c-dish-card__header {
+    margin-top: 15.92px;
+    margin-bottom: 4px;
+}
+
+.c-dish-card__restaurant-location {
+    margin-left: 5.7px;
+}
+
+.restaurant-location {
+    width: 114px;
+}

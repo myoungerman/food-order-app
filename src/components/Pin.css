@@ -1,4 +1,9 @@
-.pin {
+.pin--big {
     width: 16px;
     height: 16px;
+}
+
+.pin--small {
+    width: 9px;
+    height: 11px;
 }

@@ -3,6 +3,6 @@ import './Pin.css';
 
 export default function Pin(props) {
     return (
-        <img className={`pin ${props.className}`} src='https://i.postimg.cc/VJcGMY2J/pin.png' alt="Pin icon"></img>
+        <img className={props.className} src='https://i.postimg.cc/VJcGMY2J/pin.png' alt="Pin icon"></img>
     )
 }

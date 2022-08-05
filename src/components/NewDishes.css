@@ -1,0 +1,32 @@
+.c-new-dishes {
+    width: inherit;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-new-dishes__link {
+    display: flex;
+    margin-left: 73px;
+}
+
+.c-new-dishes__header {
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+.l-new-dishes__intro-content-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.c-new-dishes__chevron {
+    margin-left: 6px;
+    margin-top: 1px;
+}
+
+.l-new-dishes__card--container {
+    align-self: flex-start;
+    margin-left: 18px;
+}
